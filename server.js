@@ -25,7 +25,7 @@ if (process.env.DATABASE_URL) {
 }
 
 app.get("/", (req, res) => {
-  res.send("STOCK TRADE FX server is running.");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.get("/health", async (req, res) => {
