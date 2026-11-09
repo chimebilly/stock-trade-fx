@@ -56,5 +56,29 @@ A modern platform designed for a simple and accessible trading experience.</p>
 <p>Trading involves risk. This website is currently a development preview, not a live brokerage service.</p>
 <p>&copy; 2026 Stock Trade FX. All rights reserved.</p>
 </footer>
-</body>
+<div style="text-align:center; padding:30px;">
+  <h2>Welcome to Stock Trade FX</h2>
+  <p>Access your trading account</p>
+
+  <button onclick="document.getElementById('login').style.display='block'">
+    Login
+  </button>
+
+  <button onclick="document.getElementById('register').style.display='block'">
+    Register
+  </button>
+
+  <div id="login" style="display:none; margin:20px;">
+    <h3>Login</h3>
+    <input type="email" placeholder="Email address">
+    <input type="password" placeholder="Password">
+  </div>
+
+  <div id="register" style="display:none; margin:20px;">
+    <h3>Create Account</h3>
+    <input type="text" placeholder="Full name">
+    <input type="email" placeholder="Email address">
+    <input type="password" placeholder="Create password">
+  </div>
+</div>
 </html>
